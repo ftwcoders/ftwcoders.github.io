@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>FTW CODERS</title>
+    <meta name="description" content="Creating Enterprise Applications For The Win." />
+</head>
+
+<body style="background-color: #01a9db; color: #fff; font-family: 'Segoe UI', Tahoma, 'Helvetica Neue', 'HelveticaNeue', Helvetica, Arial, 'Lucida Grande', sans-serif">
+  <div style="width: 100%;text-align: center;padding-top: 50px;">
+    <img id="logo" alt="FTW CODERS" src="ftwcoders.png" style="padding-bottom: 20px;"/><br />
+    <div id="contact"></div>
+  </div>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    $(function() { 
+      $('#contact').html('<a style="color:#fff;text-decoration: none" h' + 'ref="' + 'mail' + 'to:g' + 'etinfo' + '@' + 'ftwcod' + 'ers.c' + 'om">' + 'getinf' + 'o@' + 'ftwcode' + 'rs.com</a >');
+      $('#logo').mousemove(function(e) {
+        var offset = $(this).offset();
+        var green = 169 - Math.floor(169 * (e.pageX - offset.left) / 480);
+        var blue = 219 - Math.floor(219 * (e.pageY - offset.top) / 476);
+        $('body').css('background-color', '#01' + green.toString(16) + blue.toString(16));
+      });
+    });
+   </script>
+   <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33658070-1']);
+    _gaq.push(['_setDomainName', 'ftwcoders.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</body>
+</html>
